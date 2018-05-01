@@ -68,10 +68,15 @@ export class CruxTypeaheadComponent implements OnInit {
 
   test(state){
     this.valueChange.emit(state);
+    console.log(this.trigger)
+  }
+
+  clickhere(){
+    this.trigger.openPanel();
   }
 
   ngOnInit() {
-  console.log(this.trigger)
+ 
   }
 
 }
